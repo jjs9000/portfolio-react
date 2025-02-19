@@ -1,14 +1,16 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import './App.css'
+import { LoadingScreen } from './components/LoadingScreen';
+import "./index.css"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLoaded, setIsLoaded] = useState(false);
 
   return (
     <>
-      <h1 class="">Farris Portfolio</h1>
+      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
     </>
-  )
+  );
 }
 
 export default App
