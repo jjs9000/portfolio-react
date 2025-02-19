@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1>Farris Portfolio</h1>
+      <h1 class="">Farris Portfolio</h1>
     </>
   )
 }
